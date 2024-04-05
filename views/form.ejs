@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+    </header>
+    <main>
+        <form method="post">
+            <section>
+                <fieldset>
+                    <legend>Basic Details</legend>
+                <div class="flexer">
+                    <div><label for="fname">First Name: </label></div>
+                    <div><input type="text" name="fname" id="fname"></div>
+                    <div id="fname-msg"></div>
+                    <div><label for="lname">Last Name: </label></div>
+                    <div><input type="text" name="lname" id="lname"></div>
+                    <div id="lname-msg"></div>
+                    <div><label for="desg">Designation: </label></div>
+                    <div><input type="text" name="desg" id="desg"></div>
+                    <div id="desg-msg"></div>
+                </div>
+                <div class="flexer">
+                    <div><label for="email">e-Mail Address: </label></div>
+                    <div><input type="text" name="email" id="email"></div>
+                    <div class="email-msg"></div>
+                    <div><label for="add1">Address-1: </label></div>
+                    <div><input type="text" name="add1" id="add1"></div>
+                    <div class="add1-msg"></div>
+                    <div><label for="add2">Address-2: </label></div>
+                    <div><input type="text" name="add2" id="add2"></div>
+                    <div class="add2-msg"></div>
+                </div>
+                <div class="flexer">
+                    <div><label for="city">City: </label></div>
+                    <div><input type="text" name="city" id="city"></div>
+                    <div class="city-msg"></div>
+                    <div><label for="state">State: </label></div>
+                    <div><input type="text" name="state" id="state"></div>
+                    <div class="state-msg"></div>
+                    <div><label for="pin">PIN Code</label></div>
+                    <div><input type="text" name="pin" id="pin"></div>
+                    <div class="pin-msg"></div>
+                </div>
+                <div class="flexer">
+                    <div><label for="Gender">Gender: </label></div>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="M"> Male
+                        <input type="radio" name="gender" id="female" value="F"> Female
+                        <input type="radio" name="gender" id="others" value="O"> Others
+                    </div>
+                    <div class="gender-msg"></div>
+                    <div><label for="rel">Relationship Status: </label></div>
+                        <div>
+                            <select id="rel">
+                                <option value="S">Single</option>
+                                <option value="M">Married</option>
+                            </select>
+                        </div>
+                    <div class="rel-msg"></div>
+                </div>
+            </fieldset>
+            </section>
+        </form>
+    </main>
+    <footer><p>Thank You for Visiting!</p></footer>
+</body>
+</html>
