@@ -11,7 +11,7 @@
         <h1>Job Application Form</h1>
     </header>
     <main>
-        <form method="post">
+        <form action="/validate" method="post">
             <section>
                 <fieldset>
                     <legend>Basic Details</legend>
@@ -76,7 +76,7 @@
                     <div class="gender-msg">&nbsp;</div>
                     <div><label for="rel">Relationship Status: </label></div>
                         <div>
-                            <select id="rel">
+                            <select id="rel" name="rels">
                                 <option value="S">Single</option>
                                 <option value="M">Married</option>
                             </select>
@@ -141,25 +141,25 @@
                         From: <input type="date" name="f-0" id="f-0">
                         To: <input type="date" name="t-0" id="t-0">
                     </div>
+                    <div id="work-0-msg">&nbsp;</div>
+                </div>
+                <div>
+                    <div class="flexer">
+                        Company Name: <input type="text" name="comp-1" id="comp-1">
+                        Designation: <input type="text" name="desg-1" id="desg-1">
+                        From: <input type="date" name="f-1" id="f-1">
+                        To: <input type="date" name="t-1" id="t-1">
+                    </div>
                     <div id="work-1-msg">&nbsp;</div>
                 </div>
                 <div>
                     <div class="flexer">
-                        Company Name: <input type="text" name="comp-0" id="comp-0">
-                        Designation: <input type="text" name="desg-0" id="desg-0">
-                        From: <input type="date" name="f-0" id="f-0">
-                        To: <input type="date" name="t-0" id="t-0">
+                        Company Name: <input type="text" name="comp-3" id="comp-3">
+                        Designation: <input type="text" name="desg-3" id="desg-3">
+                        From: <input type="date" name="f-3" id="f-3">
+                        To: <input type="date" name="t-3" id="t-3">
                     </div>
                     <div id="work-2-msg">&nbsp;</div>
-                </div>
-                <div>
-                    <div class="flexer">
-                        Company Name: <input type="text" name="comp-0" id="comp-0">
-                        Designation: <input type="text" name="desg-0" id="desg-0">
-                        From: <input type="date" name="f-0" id="f-0">
-                        To: <input type="date" name="t-0" id="t-0">
-                    </div>
-                    <div id="work-3-msg">&nbsp;</div>
                 </div>  
             </fieldset>
             </section>
@@ -173,27 +173,27 @@
                             <div>
                                 <div>
                                     <input type="checkbox" name="lang" id="lang-0"> Hindi
-                                    <input type="checkbox" name="hin" id="hin-0"> Can Read
-                                    <input type="checkbox" name="hin" id="hin-1"> Can Write
-                                    <input type="checkbox" name="hin" id="hin-2"> Can Speak
+                                    <input type="checkbox" name="hin-0" id="hin-0"> Can Read
+                                    <input type="checkbox" name="hin-1" id="hin-1"> Can Write
+                                    <input type="checkbox" name="hin-2" id="hin-2"> Can Speak
                                 </div>
                                 <div id="lang-1-msg">&nbsp;</div>
                             </div>
                             <div>
                                 <div>
                                     <input type="checkbox" name="lang" id="lang-1"> English
-                                    <input type="checkbox" name="eng" id="eng-0"> Can Read
-                                    <input type="checkbox" name="eng" id="eng-1"> Can Write
-                                    <input type="checkbox" name="eng" id="eng-2"> Can Speak
+                                    <input type="checkbox" name="eng-0" id="eng-0"> Can Read
+                                    <input type="checkbox" name="eng-1" id="eng-1"> Can Write
+                                    <input type="checkbox" name="eng-2" id="eng-2"> Can Speak
                                 </div>
                                 <div id="lang-2-msg">&nbsp;</div>
                             </div>
                             <div>
                                 <div>
                                     <input type="checkbox" name="lang" id="lang-2"> Gujarati
-                                    <input type="checkbox" name="guj" id="guj-0"> Can Read
-                                    <input type="checkbox" name="guj" id="guj-1"> Can Write
-                                    <input type="checkbox" name="guj" id="guj-2"> Can Speak
+                                    <input type="checkbox" name="guj-0" id="guj-0"> Can Read
+                                    <input type="checkbox" name="guj-1" id="guj-1"> Can Write
+                                    <input type="checkbox" name="guj-2" id="guj-2"> Can Speak
                                 </div>
                                 <div id="lang-3-msg">&nbsp;</div>
                             </div>
@@ -306,5 +306,8 @@
         </form>
     </main>
     <footer><p>Thank You for Visiting!</p></footer>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
